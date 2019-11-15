@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.wxingzou</groupId>
+    <artifactId>spring-boot-starter-condition-flow-engine</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>${project.artifactId}</name>
+    <packaging>jar</packaging>
+    <description>条件流引擎 for spring-boot </description>
+
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/Wu-XiaoLin/condition-flow-Engine</url>
+        <connection>https://github.com/Wu-XiaoLin/condition-flow-Engine.git</connection>
+        <developerConnection>https://github.com/Wu-XiaoLin/condition-flow-Engine</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Wu XiaoLin</name>
+            <email>wxl19980803@gmail.com</email>
+            <url>http://blog.wxingzou.cn</url>
+        </developer>
+    </developers>
+
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.2.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.wxingzou</groupId>
+            <artifactId>condition-flow-Engine</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.6.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.29</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
