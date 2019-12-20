@@ -2,6 +2,7 @@ package cn.wxingzou.conditionflow;
 
 import cn.wxingzou.conditionflow.core.BeanFactory;
 import org.springframework.beans.BeansException;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Component;
  * @date 2019/11/14 11:42
  **/
 @Component
+@ConditionalOnProperty(value = "conditionFlow.enable", matchIfMissing = true)
 public class BeanFactoryImpl implements ApplicationContextAware, BeanFactory {
 
     private ApplicationContext applicationContext;
